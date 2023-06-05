@@ -1,0 +1,68 @@
+
+.img1{
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  #coverimg{
+    background-image: url(./images/Cover\ Page.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 500px;
+    }
+
+    .head{
+      margin-top: 10rem;
+      margin-left: 2rem;
+    }
+  .head h1{
+    font-size: 75px;
+    text-shadow: 1px 1px 20px rgb(126, 126, 126);
+
+  }
+  .head h3{
+    
+    text-shadow: 1px 1px 20px rgb(126, 126, 126);
+
+  }
+ #h5{
+    font-size: 20px;
+    color: red;
+    text-align: center;
+  }
+  #card-body{
+    background-color: rgb(196, 196, 196);
+  }
+
+.col-md-4 img{
+  filter: brightness(50%);
+}
+
+@media(max-width:576px){
+#coverimg{
+  height: 200px;
+}
+.head{
+  margin-top: 3rem;
+  margin-left: 0rem;
+}
+.head h1{
+  font-size: 20px;
+  text-shadow: 1px 1px 20px rgb(126, 126, 126);
+}
+.head h3{
+  font-size: 10px;
+}
+}
+
+@media(max-width:	720px){
+  .head h1{
+    font-size: 40px;
+  }
+  .head h3{
+    font-size: 20px;
+  }
+  
+}
