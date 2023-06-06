@@ -1,5 +1,8 @@
 import React from 'react';
 // import '../style.css'
+import img1 from '../images/about1.jpg'
+import img2 from '../images/personal.jpg'
+import img3 from '../images/timeline.png'
 
 function about() {
   return (
@@ -7,7 +10,7 @@ function about() {
    <div className="card mb-3 my-3 m-auto " style = {{maxWidth: '85%', alignItems: 'center',  backgroundColor:'#d9d9d9'}}>
   <div className="row g-0">
     <div className="col-md-4">
-      <img id='card-img' src="./images/about1.jpg" className="img-fluid rounded" alt="..."/>
+      <img id='card-img' src={img1} className="img-fluid rounded" alt="..."/>
     </div>
     <div className="col-md-8">
       <div id='About' className="card-body">
@@ -31,7 +34,7 @@ function about() {
 <div className="card mb-3 my-3 m-auto" style = {{maxWidth: '85%', backgroundColor:'#d9d9d9'}}>
   <div className="row g-0">
     <div className="col-md-4">
-      <img  src="./images/personal.jpg" className="img-fluid rounded" alt="..."/>
+      <img  src={img2} className="img-fluid rounded" alt="personal"/>
     </div>
     <div className="col-md-8">
       <div id='Personal-info' className="card-body">
@@ -79,7 +82,7 @@ function about() {
 <div className="card mb-3 my-3 m-auto " style = {{maxWidth: '85%', alignItems: 'center', backgroundColor:'#d9d9d9'}}>
   <div className="row g-0">
     <div className="col-md-4 d-flex">
-      <img id='card-img' src="./images/timeline.png" className="img-fluid rounded"  style={{ alignSelf:'center'}} alt="..."/>
+      <img id='card-img' src={img3}className="img-fluid rounded"  style={{ alignSelf:'center'}} alt="..."/>
     </div>
     <div className="col-md-8">
       <div id='Timeline' className="card-body">
