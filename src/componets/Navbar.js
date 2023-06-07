@@ -1,12 +1,34 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import img1 from '../images/img-1.jpg';
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 function Navbar() {
+useEffect(()=>{
+  AOS.init({duration:800});
+},[]);
+
+let prevScrollPos = window.pageYOffset;
+const navbar = document.getElementById("menu"); // Replace "navbar" with the ID of your navigation bar element
+
+window.onscroll = function() {
+  const currentScrollPos = window.pageYOffset;
+  
+  if (prevScrollPos > currentScrollPos) {
+    navbar.style.top = "0";
+  } else {
+    navbar.style.top = `-${navbar.offsetHeight}px`;
+    navbar.style.transition = '.5s ease-in-out'
+  }
+  
+  prevScrollPos = currentScrollPos;
+};
+
+ 
   return (
    <>
-    <nav id='menu' className="navbar navbar-expand-lg navbar-dark bg-dark ">
+    <nav  id='menu' className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top " >
   <div className="container-fluid " style={{fontSize:'20px'}}>
       <img className='img1' src={img1} alt="img" width="50" height="40"/>
     <a className="navbar-brand"  style={{fontSize:'25px'}} href="/">Tribute Page</a>

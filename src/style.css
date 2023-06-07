@@ -59,10 +59,9 @@
 }
 }
 
-
-
-
-
+tbody a{
+  text-decoration: none;
+}
 
 /* NavBar Hover */
 
@@ -100,4 +99,27 @@
 #menu ul li a span{
   position: relative;
   z-index: 1;
+}
+
+/* Link Style */
+/* #link a{
+  color: #27282c;
+  text-decoration: none;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 5px 50px 5px 50px;
+} */
+
+#link a {
+  font-size: 20px;
+  text-decoration: none;
+  box-shadow: inset 2px 0 0 0 #54b3d6;
+  color: #0076a1;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+#link a:hover {
+  box-shadow: inset 300px 0 0 0 #54b3d6;
+  color: white;
 }
